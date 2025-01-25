@@ -13,7 +13,20 @@ html(lang='ru')
 		link(rel="preload" as="font" type="font/woff2" href="/assets/fonts/JetBrainsMono-Regular.woff2" crossorigin)
 
 		| <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(99604688, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/99604688" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-		
+
+		|<script>
+		|		(function(){(function c(d,w,m,i) {
+		|				window.supportAPIMethod = m;
+		|				var s = d.createElement('script');
+		|				s.id = 'supportScript'; 
+		|				var id = 'ecf249a1057009616a1473c370afb025';
+		|				s.src = (!i ? 'https://lcab.talk-me.ru/support/support.js' : 'https://static.site-chat.me/support/support.int.js') + '?h=' + id;
+		|				s.onerror = i ? undefined : function(){c(d,w,m,true)};
+		|				w[m] = w[m] ? w[m] : function(){(w[m].q = w[m].q ? w[m].q : []).push(arguments);};
+		|				(d.head ? d.head : d.body).appendChild(s);
+		|		})(document,window,'TalkMe')})();
+		|</script>
+
 		block head
 
 	body(class=pageClass)
