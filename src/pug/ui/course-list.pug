@@ -1,0 +1,88 @@
+-
+	var arr = [
+		{
+			name: "Английский для начинающих",
+			dsc: "Сделай первые шаги в изучении английского",
+			diff: 1,
+			in_progress: 42,
+			count: 50,
+			thumb: "/assets/img/courses/01.avif"
+		},
+		{
+			name: "REAL ENGLISH",
+			dsc: "Говори смело и уверенно на любые темы",
+			diff: 2,
+			in_progress: 64,
+			count: 50,
+			thumb: "/assets/img/courses/02.avif"
+		},
+		{
+			name: "Средний уровень",
+			dsc: "Узнай true English не понаслышке",
+			diff: 3,
+			in_progress: 146,
+			count: 50,
+			thumb: "/assets/img/courses/03.avif"
+		},
+		{
+			name: "Английский для продвинутых",
+			dsc: "Стань гуру английского",
+			diff: 4,
+			in_progress: 80,
+			count: 50,
+			thumb: "/assets/img/courses/04.avif"
+		},
+		{
+			name: "Бизнес английский",
+			dsc: "От собеседования до ведения сложных переговоров",
+			diff: 3,
+			in_progress: 86,
+			count: 50,
+			thumb: "/assets/img/courses/05.avif"
+		},
+		{
+			name: "Английский для IT",
+			dsc: "Никакого спама, только важный контент!",
+			diff: 3,
+			in_progress: 107,
+			count: 50,
+			thumb: "/assets/img/courses/06.avif"
+		},
+		{
+			name: "Английский с носителем",
+			dsc: "Разговаривай без акцента",
+			diff: 3,
+			in_progress: 71,
+			count: 50,
+			thumb: "/assets/img/courses/07.avif"
+		},
+		{
+			name: "Специализированный",
+			dsc: "Для любой профессии: от маркетинга до IT",
+			diff: 3,
+			in_progress: 34,
+			count: 50,
+			thumb: "/assets/img/courses/08.avif"
+		},
+	];
+
+.course-list
+	each item in arr
+		.item
+			img.t(src= item.thumb loading="lazy")
+			.dsc
+				.row
+					span.in_progress= `${item.in_progress} изучают`
+					span.count= `${item.count} занятий`
+					.diff
+						- for(var i = 0; i < item.diff; ++i){
+								i.f
+						- }
+						- for(var i = 0; i < (5 - item.diff); ++i){
+								i.e
+						- }
+				.row
+					span.name= item.name
+					span.dsc= item.dsc
+
+							

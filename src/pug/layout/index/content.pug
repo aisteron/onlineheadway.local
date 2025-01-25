@@ -1,0 +1,115 @@
+block variables
+
+section.slide
+	.inner
+		ul.stats
+			li
+				span.title с 2017 года
+				span.dsc помогаем делать английский<br>уверенным и свободным навыком
+			li
+				span.title 2500+
+				span.dsc студентов уже достигли с нами своих больших и разных целей
+			li
+				span.title 100+
+				span.dsc компаний уже доверились нам и получили свой результат
+		.flag
+			img.f(src="/assets/img/flag.avif" width="50" height="37")
+			span.d Онлайн обучение: IT, БИЗНЕС, ГРАММАТИКА, РАЗГОВОРНЫЙ, ИНДИВИДУАЛЬНО И В ГРУППАХ
+		.cb
+			span.title Записаться на первое пробное занятие <i>бесплатно</i>
+			li.cb
+				span Записаться
+
+section.million
+	.inner
+		span.ani Миллион новых возможностей с безупречным английским!
+section.features
+	h2.default Преимущества изучения английского вместе с нами
+	ul
+		li
+			i !{icon_glass}
+			span.title Работаем по SMART
+			span.d только на результат и чётко под вашу цель
+		li
+			i !{icon_calendar}
+			span.title Гибкое расписание
+			span.d возникло срочное дело? Просто перенесите занятие
+		li
+			i !{icon_chat}
+			span.title Лексика под контекст и цель
+			span.d обучаем современному английскому по вашим рабочим ситуациям
+		li
+			i !{icon_talk}
+			span.title Практика, а не теория
+			span.d новые знания в профессиональном общении
+		li
+			i !{icon_media}
+			span.title Квалифицированные преподаватели
+			span.d наша команда обладает международными сертификатами, дипломами и современными методиками обучения
+section.offer
+	.inner
+		h2 Получите индивидуальное предложение, <br>ответив на 5 вопросов
+		.root
+section.together
+	h2.default Онлайн-обучение с нами - это
+	.rows
+		.row
+			img.i(src="/assets/img/together/01.avif" width="341" height="206" loading="lazy")
+			img.d(src="/assets/img/together/1.svg" width="112" height="175" loading="lazy")
+			.dsc
+				span.title Индивидуальная программа для каждой группы
+				p Обучение происходит на практике, путём моделированиярабочих ситуаций. Это означает не только обширноеупотребление профессиональной лексики, но и освоениекоммуникативных моделей, отличающихся в различныхсферах. Каждая группа получает авторские методическиематериалы.
+		.row
+			img.d(src="/assets/img/together/2.svg" width="114" height="175" loading="lazy")
+			.dsc
+				span.title Занятия в группах по 5-7 человек
+				p Группы формируются на основе профессиональных интересов и целей, поставленных перед обучающимися. На своих занятиях мы обеспечиваем максимальную вовлечённость в учебный процесс каждого
+			img.i(src="/assets/img/together/02.avif" width="341" height="206" loading="lazy")
+		.row
+			img.i(src="/assets/img/together/03.avif" width="341" height="206" loading="lazy")
+			img.d(src="/assets/img/together/3.svg" width="112" height="175" loading="lazy")
+			.dsc
+				span.title Рост компетенций и развитие
+				p <i>Headway online</i> - это не только школа английского языка. Для нас важен комплексный подход к профессиональной реализации наших партнёров. Мы обеспечиваем среду для профессионального личностного развития, а также проводиим занятия английском на темы: MEETINGS PROJECTS, JOB INTERVIEWS и другие в зависимости от потребности обучающихся
+section.group
+	h2.default Групповое и индивидуальное обучение английскому языку с созданием индивидуального курса
+	.rows
+		.row
+			img.i(src="/assets/img/group/01.avif" width="363" height="187" loading="lazy")
+			.dsc
+				span.title Схема обучения
+				.c
+					ul
+						li Занятия проводятся в группах от 3 до 8 человек, а также индивидуально.
+						li Современные платформы онлайн обучения – zoom, deskle и другие.
+						li Эффект полного присутствия.
+						li Никаких барьеров для коммуникации и отработки упражнений.
+						li Занятия проходят регулярно по расписанию.
+		.row
+			.dsc
+				span.title В основе обучения – коммуникативная методика
+				.c
+					p Преподаватель проходит со слушателем три стадии обучения:
+					ul
+						li Engagement (вовлечение)
+						li Study (Изучение)
+						li Activation (Активация → использование)
+			img.i(src="/assets/img/group/02.avif" width="363" height="187" loading="lazy")
+		.row
+			img.i(src="/assets/img/group/03.avif" width="363" height="187" loading="lazy")
+			.dsc
+				span.title Наше обучение специально адаптировано для проведения занятий online
+				.c
+					p При обучении используются только современные аутентичные пособия и интерактивные ресурсы: видео, аудио, презентации, тесты, интегрированные в онлайн-платформу обучения;
+				
+section.courses
+	h2.default Наши курсы
+	include ../../ui/course-list
+section.partners
+	h2.default Наши партнеры
+	.partners-list
+		- for(var i = 1; i < 16; ++i){
+				img(src=`/assets/img/partners/0${i}.avif` loading="lazy")
+		- }
+
+
